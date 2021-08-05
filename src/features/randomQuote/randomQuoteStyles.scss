@@ -13,7 +13,7 @@
   font-size: 1.5rem;
 
   #quote-box {
-    background-color: gray;
+    background-color: whitesmoke;
     width: 850px;
     height: 450px;
     border-radius: 3px;
@@ -25,5 +25,27 @@
     font-family: "STIX Two Text", serif;
     font-weight: 700;
     font-size: 3rem;
+  }
+
+  #quote-author {
+    font-family: "STIX Two Text", serif;
+    text-align: right;
+  }
+
+  .button-group {
+    display: flex;
+    height: 140px;
+
+    .button-icon {
+      font-size: 80px;
+      margin-right: 10px;
+      color: black;
+    }
+
+    #button-quote {
+      font-size: 1.5rem;
+      align-self: center;
+      margin-left: 420px;
+    }
   }
 }

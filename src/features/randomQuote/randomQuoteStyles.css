@@ -20,7 +20,7 @@
 }
 
 #wrapper #quote-box {
-  background-color: gray;
+  background-color: whitesmoke;
   width: 850px;
   height: 450px;
   border-radius: 3px;
@@ -32,5 +32,31 @@
   font-family: "STIX Two Text", serif;
   font-weight: 700;
   font-size: 3rem;
+}
+
+#wrapper #quote-author {
+  font-family: "STIX Two Text", serif;
+  text-align: right;
+}
+
+#wrapper .button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 140px;
+}
+
+#wrapper .button-group .button-icon {
+  font-size: 80px;
+  margin-right: 10px;
+  color: black;
+}
+
+#wrapper .button-group #button-quote {
+  font-size: 1.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 420px;
 }
 /*# sourceMappingURL=randomQuoteStyles.css.map */

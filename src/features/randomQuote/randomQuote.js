@@ -16,17 +16,17 @@ export class RandomQuote extends Component {
                         </div>
                         <div id="quote-author">- Examples<span id="auth"></span></div>
                         <div class="button-group">
-                            <a href="https://twitter.com/intent/tweet" class="button">
+                            <a href="https://twitter.com/intent/tweet" class="button-icon">
                                 <i  className='icons-style'><FaTwitterSquare/></i>
                             </a>
-                            <a href="https://instagram.com/" class="button">
+                            <a href="https://instagram.com/" class="button-icon">
                                 <i className='icons-style'><FaInstagramSquare/></i>
                             </a>
                             <button id='button-quote'  type="button" class="btn btn-primary">New Quote</button>
                         </div>
                 </div>
             </div>
-        )
+        )  
     }
 }
 
