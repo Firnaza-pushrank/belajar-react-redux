@@ -25,6 +25,7 @@
     font-family: "STIX Two Text", serif;
     font-weight: 700;
     font-size: 3rem;
+    text-align: end;
   }
 
   #quote-author {
@@ -41,8 +42,11 @@
       margin-right: 10px;
       color: black;
     }
+    .button-icon :hover {
+      opacity: 0.8;
+    }
 
-    #button-quote {
+    #new-quote {
       font-size: 1.5rem;
       align-self: center;
       margin-left: 420px;
