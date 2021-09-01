@@ -1,0 +1,55 @@
+#semangat {
+  color: white;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
+}
+
+.glass {
+  background-color: white;
+  height: 90vh;
+  width: 500px;
+}
+
+.groups-length {
+  margin-top: 100px;
+}
+
+.label-groups .labels {
+  margin: 0 200px;
+  display: block;
+}
+
+.label-groups .labels .labels-name {
+  margin: 20px;
+  padding-left: 10px;
+  font-size: 3rem;
+  font-weight: bold;
+  color: black;
+}
+
+.label-groups .labels .value {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 50px;
+}
+
+.timer-groups {
+  margin-top: 50px;
+}
+
+.timer-groups .timer-display {
+  height: 300px;
+  width: 400px;
+  background-color: red;
+}
+/*# sourceMappingURL=pomodoroStyle.css.map */

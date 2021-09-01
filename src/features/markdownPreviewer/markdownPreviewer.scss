@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
+}
+
+label {
+  color: white;
+  font-size: 3rem;
+}
+
+.container {
+  padding-top: 20px;
+  height: 100vh;
+  font-size: 1.5rem;
+  .form-group {
+    margin-bottom: 20px;
+
+    #editor {
+      height: 30vh;
+    }
+
+    #preview {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}

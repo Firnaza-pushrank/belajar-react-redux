@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
+}
+
+label {
+  color: white;
+  font-size: 3rem;
+}
+
+.container {
+  padding-top: 20px;
+  height: 100vh;
+  font-size: 1.5rem;
+}
+
+.container .form-group {
+  margin-bottom: 20px;
+}
+
+.container .form-group #editor {
+  height: 30vh;
+}
+
+.container .form-group #preview img {
+  max-width: 100%;
+}
+/*# sourceMappingURL=markdownPreviewer.css.map */

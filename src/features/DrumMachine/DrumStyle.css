@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
+}
+
+.semangat {
+  color: white;
+  margin-left: 40%;
+}
+
+#drum-machine {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+  height: 90vh;
+  font-size: 1.5rem;
+}
+
+#drum-machine #display {
+  background-color: gray;
+  height: 500px;
+  width: 80%;
+  color: white;
+  position: relative;
+  display: inline-block;
+  -webkit-box-shadow: 0 2.8px 2.2px rgba(56, 182, 224, 0.034), 0 6.7px 5.3px rgba(56, 182, 224, 0.048), 0 12.5px 10px rgba(56, 182, 224, 0.06), 0 22.3px 17.9px rgba(56, 182, 224, 0.072), 0 41.8px 33.4px rgba(56, 182, 224, 0.086), 0 10px 80px rgba(56, 182, 224, 0.12);
+          box-shadow: 0 2.8px 2.2px rgba(56, 182, 224, 0.034), 0 6.7px 5.3px rgba(56, 182, 224, 0.048), 0 12.5px 10px rgba(56, 182, 224, 0.06), 0 22.3px 17.9px rgba(56, 182, 224, 0.072), 0 41.8px 33.4px rgba(56, 182, 224, 0.086), 0 10px 80px rgba(56, 182, 224, 0.12);
+  /*** Style for Drum Settings ****/
+}
+
+#drum-machine #display .pad-group {
+  text-align: center;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 0 0 20px;
+  height: 480px;
+  width: 480px;
+}
+
+#drum-machine #display .pad-group .drum-pad {
+  color: black;
+  position: relative;
+  float: left;
+  width: 140px;
+  height: 140px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding-top: 60px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+}
+
+#drum-machine #display #drum-settings {
+  float: right;
+  margin: 90px 30px 0 0;
+}
+
+#drum-machine #display #drum-settings .setting {
+  background-color: black;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+}
+
+#drum-machine #display #drum-settings .setting h1 {
+  padding-bottom: 10px;
+}
+
+#drum-machine #display #drum-settings .setting .volume {
+  margin-top: 50px;
+}
+
+#drum-machine #display #drum-settings .setting .volume input[type="range"] {
+  width: 400px;
+  cursor: pointer;
+}
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+  #drum-machine #display #drum-settings .setting input[type="checkbox"] {
+    --active: rgb(56, 182, 224);
+    --active-inner: #fff;
+    --focus: 2px rgba(39, 94, 254, 0.3);
+    --border: #bbc1e1;
+    --border-hover: #275efe;
+    --background: #fff;
+    --disabled: #f6f8ff;
+    --disabled-inner: #e1e6f9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 30px;
+    outline: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid var(--bc, var(--border));
+    background: var(--b, var(--background));
+    -webkit-transition: background 0.3s, border-color 0.3s, -webkit-box-shadow 0.2s;
+    transition: background 0.3s, border-color 0.3s, -webkit-box-shadow 0.2s;
+    transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+    transition: background 0.3s, border-color 0.3s, box-shadow 0.2s, -webkit-box-shadow 0.2s;
+  }
+  #drum-machine #display #drum-settings .setting input[type="checkbox"]:after {
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    position: absolute;
+    -webkit-transition: opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+    transition: opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s), -webkit-transform var(--d-t, 0.3s) var(--d-t-e, ease);
+  }
+  #drum-machine #display #drum-settings .setting input[type="checkbox"]:checked {
+    --b: var(--active);
+    --bc: var(--active);
+    --d-o: 0.3s;
+    --d-t: 0.6s;
+    --d-t-e: cubic-bezier(0.2, 0.85, 0.32, 1.2);
+  }
+  #drum-machine #display #drum-settings .setting input[type="checkbox"] + label {
+    font-size: 1.5rem;
+    line-height: 21px;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    margin: 4px 20px 0 10px;
+  }
+  #drum-machine #display #drum-settings .setting input[type="checkbox"].switch {
+    width: 60px;
+    border-radius: 20px;
+  }
+  #drum-machine #display #drum-settings .setting input[type="checkbox"].switch:after {
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background: var(--ab, var(--border));
+    -webkit-transform: translateX(var(--x, 0));
+            transform: translateX(var(--x, 0));
+  }
+  #drum-machine #display #drum-settings .setting input[type="checkbox"].switch:checked {
+    --ab: var(--active-inner);
+    --x: 26px;
+  }
+}
+/*# sourceMappingURL=DrumStyle.css.map */
